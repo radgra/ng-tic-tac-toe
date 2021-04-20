@@ -1,0 +1,18 @@
+<div>
+    Player X
+</div>
+<div>
+    Player O
+</div>
+<h1>
+    <ng-container *ngIf="gameResult==='draw'">
+        Draw
+    </ng-container>
+    <ng-container *ngIf="gameResult==='X'">
+        Player 'X' Won
+    </ng-container>
+    <ng-container *ngIf="gameResult==='O'">
+        Player 'O' Won
+    </ng-container>
+</h1>
+<p>{{nextMove}}</p>

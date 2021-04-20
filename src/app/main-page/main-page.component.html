@@ -1,0 +1,6 @@
+<div class="container mt-5">
+    <ng-container *ngIf="(playerValidMove$ | async) as validMove;">
+        <app-scoreboard [gameResult]="gameResult" [nextMove]="validMove?.nextMove"></app-scoreboard>
+    </ng-container>	
+    <app-board [board]="board$ | async" (cellClicked)="onCellClicked($event)"></app-board>
+</div>

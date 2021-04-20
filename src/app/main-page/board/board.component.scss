@@ -1,0 +1,26 @@
+.cell {
+    border:1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-value {
+    font-size: 50px;
+}
+
+.row {
+    height:120px;
+}
+
+.cell-0, .cell-2 {
+    border-left:none;
+    border-right:none;
+}
+
+.row-0 .cell, 
+.row-2 .cell {
+    border-top:none;
+    border-bottom:none;
+}
+

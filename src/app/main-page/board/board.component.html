@@ -1,0 +1,5 @@
+<div *ngFor="let row of board; let r = index" [class]="'row row-'+r">
+    <div *ngFor="let cell of row; let c = index" [class]="'col-4 cell cell-'+c" (click)="onCellClicked(r,c)">
+        <span class="cell-value">{{cell}}</span>
+    </div>
+</div>
