@@ -122,8 +122,13 @@
               "devServerTarget": "ng-tic-tac-toe:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-tic-tac-toe"
 }
